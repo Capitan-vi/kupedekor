@@ -1,0 +1,439 @@
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-family inherit
+  font-size inherit
+
+li
+  list-style none
+
+a
+  text-decoration none
+
+h1
+h2
+h3
+  font-weight normal
+
+img
+input[type="button"]
+input[type="file"]
+input[type="reset"]
+  border none
+
+
+
+header
+main
+footer
+nav
+section
+article
+aside
+figcaption
+figure
+  display block
+
+
+li
+a
+  display inline-block
+
+
+
+.clearfix:after
+  content ''
+  display block
+  clear both
+
+.l-center-wrapper
+  width 960px
+  margin 0 auto
+  &_top-menu
+    width 990px
+  &_footer
+    width 990px
+
+html
+body
+  height 100%
+.page-wrapper
+  height auto
+  min-height 100%
+  min-height calc(100% - 43px - 103px)
+  background-color rgb(205, 184, 164)
+  //background-color rgba(246, 239, 233,.55) /* old variant */
+  background-color rgba(233, 219, 207, 0.7)
+
+
+body
+  //font-family Helvetica, HelveticaNeue, 'Segoe UI', Arial, sans-serif
+  font-family: 'Segoe UI', Arial, sans-serif
+  font-size 0
+  background-image url('../images/background-wood.jpg')
+  background-position center top
+  background-repeat repeat
+  background-attachment fixed
+
+
+.top-menu
+  height 43px
+  font-size 0
+  text-align center
+  background-color #642C0D
+  box-shadow 0 0 4px 2px rgba(0,0,0,0.4)
+
+  &__active
+  &__link
+    padding 11px 18px
+    font-size 16px
+    text-transform uppercase
+    color #fff
+    text-shadow 0px 1px 1px rgba(0,0,0,.5)
+
+  &__active
+    font-weight 600
+    background-color #4F1F04
+
+  &__link
+    &:hover
+    &:focus
+      background-color #90431a
+      background-image: linear-gradient(to bottom, #c28758, #7d3e0d), linear-gradient(to bottom, #c28758, #7d3e0d)
+      transition .2s
+
+.page-heading
+  font-size 30px
+  margin-bottom .6em
+
+.sub-heading
+  font-size 22px
+  margin-bottom .5em
+
+
+
+.table
+  border-collapse collapse
+
+  &__cell
+    padding 5px 8px
+    border 1px solid #5E5E5E
+    &:nth-of-type(1)
+      text-align right
+
+
+
+// Хэдер главной страницы
+.header
+  padding 40px 10px
+  font-size 0
+  background-color rgb(205, 184, 164)
+  background-color rgba(246, 239, 233,.1)
+
+  &__column
+    display inline-block
+    vertical-align top
+    width 300px
+    min-height 20px
+    margin-right 20px
+    &:nth-of-type(3n+3)
+      margin-right 0
+    &:nth-of-type(1)
+      padding-left 60px
+
+  &__logo
+    margin-bottom 25px
+
+  &__contact
+    &:not(:first-of-type)
+      margin-top 5px
+      margin-left 25px
+
+  &__telephone-number
+    display inline-block
+    font-size 22px
+    font-weight 600
+    color #aa2700
+
+// __Форма заказа звонка
+.get-call
+  width 240px
+
+  &__heading
+    font-size 18px
+    font-style italic
+    font-weight 600
+    margin-bottom .4em
+
+  &__group
+    margin-bottom 3px
+    &:last-of-type
+      margin-bottom 12px
+
+  &__label
+    display inline-block
+    margin-bottom 3px
+    font-size 16px
+
+  &__input
+    width 100%
+    padding 4px .7em
+    font-size 16px
+    font-family: Helvetica, HelveticaNeue, 'Segoe UI', Arial, sans-serif
+    background-color #7F6149
+    border 1px solid #6A4C34
+    box-shadow inset 0 1px 1px rgba(0,0,0,0.175);
+    &:focus
+      outline none
+
+  &__submit
+    float right
+    font-size 16px
+    padding 0 .7em
+    padding-top 8px
+    padding-bottom 6px
+    vertical-align top
+    font-family: Helvetica, HelveticaNeue, 'Segoe UI', Arial, sans-serif
+    text-transform uppercase
+    letter-spacing .05ex
+    background-color #66340D
+    background-image linear-gradient(to bottom, #C28758, #7D3E0D)
+    border 1px solid #936239
+    &:hover
+    &:focus
+      cursor pointer
+    &:active
+      background-image none
+      background-color #7D3E0D
+      box-shadow inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05)
+      outline none
+      transition .2s
+
+  &__more-link
+    font-size 16px
+    line-height 32px
+    color #000
+    &:focus
+    &:hover
+      text-decoration underline
+      transition .2s
+
+// __Слайдер
+.slider
+  position relative
+  text-align center
+  font-size 0
+  background-color #1f1f1f
+  border 4px solid #000
+
+  &__content
+    position relative
+    height 715px
+    overflow hidden
+    text-align center
+
+  &__picture
+    /*position absolute
+    top 0
+    left 0*/
+    max-height 715px
+
+.sliderBullets
+  z-index 50
+  position absolute
+  bottom 7px
+  left 50%
+  width 100px
+  margin-left -50px
+
+  & a
+    width 12px
+    height 12px
+    margin-right 6px
+    background-color #ccc
+    background-image linear-gradient(to bottom, #ffffff, #b4b4b4)
+    border-radius 50%
+    box-shadow 0 1px 1px 0 rgba(0,0,0,0.9)
+    &:last-of-type
+      margin-right 0
+    &.active
+      background-color #515151
+      //background-image linear-gradient(to bottom, #191919, #515151)
+      background-image none
+      box-shadow inset 1px 1px 1px 0 rgba(0,0,0,0.9)
+
+.slider__button
+  z-index 50
+  position absolute
+  top 50%
+  width 25px
+  height 60px
+  &_previous
+    left 10px
+    border-top: 30px solid transparent
+    border-right: 25px solid #000
+    border-bottom: 30px solid transparent
+  &_next
+    right 10px
+    border-top: 30px solid transparent
+    border-left: 25px solid #000
+    border-bottom: 30px solid transparent
+
+
+.gallery
+  font-size 0
+  margin-top 10px
+  margin-bottom 40px
+
+  &__link
+    margin-right 33px
+    &:nth-of-type(4n)
+      margin-right 0
+
+  &__preview-picture
+    max-width 180px
+    box-shadow 1px 2px 5px 0px rgba(105, 65, 37, 0.5)
+    &:hover
+      box-shadow none
+      cursor pointer
+
+
+.main
+  padding 0 70px
+  padding-top 45px
+  padding-bottom 40px
+  font-size 16px
+
+  &__page-heading
+    font-size 24px
+    margin-bottom .35em
+    font-style italic
+
+
+// __Списки маркированные
+.theses-list
+  width 540px
+  margin-bottom 30px
+  margin-left 20px
+
+  &__item
+    position relative
+    display block
+    max-width 500px
+    margin-bottom .3em
+    padding-left 25px
+    font-size 16px
+    line-height 1.25em
+    &:before
+      content '—'
+      position absolute
+      top 0
+      left 0
+
+  &_rhomb
+    .theses-list__item
+      padding-left 20px
+      &:before
+        content url('../images/icon-rhombus.png')
+        width 10px
+        height 20px
+
+// __Текстовые блоки
+.text
+  font-size 16px
+  line-height 1.25em
+  &:not(:last-of-type)
+    margin-bottom .85em
+
+.mail-link
+  color inherit
+  text-decoration underline
+
+.top-links
+  margin-top 27px
+
+  &__item
+    vertical-align top
+    width 250px
+    height 4em
+    margin-right 35px
+    padding 11px 25px
+    background-image linear-gradient(to bottom, #c28758, #7d3e0d)
+    font-size 18px
+    text-align center
+    text-transform uppercase
+    color #FFEFE3
+    text-shadow 0px 1px 1px rgba(0,0,0,0.5)
+    box-shadow 1px 1px 4px 0px rgba(0,0,0,0.4)
+    &:last-of-type
+      margin-right 0
+      padding-top 20px
+    &:hover
+    &:focus
+      opacity .8
+      transition .2s
+
+
+.p-systems-container:not(:last-of-type)
+  margin-bottom 30px
+
+.systems-preview
+  display inline
+
+  &__picture
+    margin-top 4px
+    &_float-left
+      float left
+      margin-right 24px
+      margin-bottom 7px
+
+    &_float-right
+      float right
+      margin-left 24px
+
+
+.materials-gallery
+  font-size 0
+
+
+
+// Блок ссылок на производителей
+.manufacturers
+
+  &__heading
+    margin-top 1.4em
+    margin-bottom .8em
+    font-size 20px
+    font-weight 600
+
+  &__image
+    margin-right 35px
+    &:last-of-type
+      margin-right 0
+    width: 250px
+    padding 20px
+    background-color rgba(255, 255, 255, 0.5)
+
+// __Футер основной
+.footer
+  height 103px
+  padding 20px 25px
+  background-color #391200
+  color rgb(255, 232, 221)
+  box-shadow 0 2px 4px 2px rgba(0,0,0,0.4)
+
+  &__column
+    display inline-block
+    vertical-align top
+    width 300px
+    margin-right 20px
+    font-size 16px
+    &:last-child
+      margin-right 0
+
+  &__column-heading
+    font-weight 600
+
+  &__link
+    color #FFBE9B

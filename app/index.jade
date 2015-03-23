@@ -1,0 +1,101 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title Шкафы-купе в КупеДекор
+    link(rel='stylesheet' href='css/main.css')
+    link(rel='icon' href='favicon.ico' type='image/x-icon')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='js/mobilyslider.js')
+
+  body.body
+    nav.top-menu.l-center-wrapper.l-center-wrapper_top-menu.clearfix
+        ul.top-menu__list
+          li.top-menu__item
+            span.top-menu__active Главная
+          li.top-menu__item
+            a.top-menu__link(href='works.html') Наши работы
+          li.top-menu__item
+            a.top-menu__link(href='about.html') О компании
+          li.top-menu__item
+            a.top-menu__link(href='systems.html') Системы
+          li.top-menu__item
+            a.top-menu__link(href='materials.html') Материалы
+          li.top-menu__item
+            a.top-menu__link(href='contacts.html') Контакты
+
+   .page-wrapper.l-center-wrapper
+      header.header.clearfix
+        .header__column
+          img.header__logo(src='images/logo.png')
+          p.header__contact
+            span.header__telephone-number +7 (499) 390-62-36
+          p.header__contact
+            span.header__telephone-number +7 (925) 048-47-70
+        .header__column
+          h2.sub-heading Комфорт и удобство в вашем доме
+        .header__column
+          form.get-call.clearfix(method='post' action='#' autocomplete)
+            h2.get-call__heading Расчитать стоимость шкафа-купе
+            .get-call__group
+              label.get-call__label(for='client-name') представьтесь, пожалуйста:
+              input.get-call__input(type='text' name='client-name' id='client-name')
+            .get-call__group
+              label.get-call__label(for='client-phone-number') ваш номер:
+              input.get-call__input(type='text' name='client-phone-number' id='client-phone-number' placeholder='+7 (905) 123 45 67')
+            a.get-call__more-link(href='calculate-of-coast.html') Подробнее
+            input.get-call__submit(type='submit' value='заказать')
+
+      .slider
+        .slider__content
+          img.slider__picture(src='pictures/slide1.jpg')
+          img.slider__picture(src='pictures/slide2.jpg')
+          img.slider__picture(src='pictures/slide3.jpg')
+          img.slider__picture(src='pictures/slide4.jpg')
+          img.slider__picture(src='pictures/slide5.jpg')
+
+      main.main
+        h1.main__page-heading 10 причин заказать шкаф у нас:
+        ul.theses-list.theses-list_rhomb
+          li.theses-list__item Собственное производство
+          li.theses-list__item Большой опыт работы
+          li.theses-list__item Выполнение сложных и нестандартных заказов
+          li.theses-list__item Оптимальное соотношение цены и качества
+          li.theses-list__item Заказ без предоплаты
+          li.theses-list__item Большое разнообразие цветовой гаммы
+          li.theses-list__item Быстрое изготовление (3-5 дней)
+          li.theses-list__item Профессиональный дизайнер учтет все ваши пожелания и предложения и предложит наилучшее решение
+          li.theses-list__item Высокое качество продукции
+          li.theses-list__item Квалифицированные сотрудники
+
+        .present-company
+          p.text В нашей компании работает команда высококвалифицированных специалистов, обладающих необходимыми знаниями и имеющая большой опыт в производстве шкафов-купе.
+          p.text Все детали шкафов-купе производятся на современном высокоточном немецком оборудовании, из экологически чистых материалов, повышенной износостойкости. Все это позволяет нам изготовить высококачественную продукцию.
+          p.text Мы можем предложить вам: корпусные шкафы-купе, встроенные шкафы-купе, угловые шкафы-купе, шкафы-купе для прихожих, гардеробные, библиотеки и другую мебель на заказ.
+          p.text Мы осуществим полный цикл работ, который включает в себя: прием заказа, проектирование, производство, доставку, сборку и монтаж шкафа-купе.
+
+        .top-links
+          a.top-links__item(href='calculate-of-coast.html') Рассчет стоимости шкафа купе
+          a.top-links__item(href='works.html#types-of-sliding-wardrobe') Какими бывают шкафы-купе
+          a.top-links__item(href='javascript:void(0)') Акции!
+
+
+        .manufacturers
+          h3.manufacturers__heading Производители
+          img.manufacturers__image(src='images/logo-komandor.png')
+          img.manufacturers__image(src='images/logo-egger.png')
+          img.manufacturers__image(src='images/logo-kronostar.png')
+
+    footer.footer.l-center-wrapper.l-center-wrapper_footer
+      .footer__column.footer__column_legal_name
+        .legal-name__row ИП Маслов Дмитрий Андреевич
+        .legal-name__row ОГРНИП 312774609400500
+        .legal-name__row ИНН 773134977654
+
+      .footer__column.footer__column_legal_address
+        .footer__column-heading Юр. адрес:
+        |121596, г.Москва, ул. Горбунова, д.11, к.4
+      .footer__column.footer__column_contacts
+        .footer__contact Телефон: 8 (499) 390-62-36
+        .footer__contacts__contact e-mail:
+          a.footer__link(href='mailto:info@kupedekor.ru') &nbsp;info@kupedekor.ru
